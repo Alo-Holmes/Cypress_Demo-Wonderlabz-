@@ -1,4 +1,4 @@
-describe('template spec', () => {
+describe('Interact with checkboxes', () => {
   beforeEach(() => {
     
     cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
@@ -12,7 +12,7 @@ describe('template spec', () => {
 
   it('validare that the first checkbox is unchecked',() =>{
     cy.get('#checkBoxOption1')
-    .check().should('be.checked')
+    .uncheck().should('not.be.checked')
 
     cy.get('#checkBoxOption2')
     .check().should('be.checked')
