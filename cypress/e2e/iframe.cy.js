@@ -10,6 +10,7 @@ describe('Iframe', () => {
       .then(cy.wrap);
 
       iframe.xpath('/html/body/div/header/div[2]/div/div/div[2]/div[1]/a').should('be.visible')
+      iframe.xpath('/html/body/div/div[2]/section[4]/div[1]/div[1]/div[1]/h2').should('be.visible')
      
       });
     })

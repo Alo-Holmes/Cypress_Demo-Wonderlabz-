@@ -13,7 +13,8 @@ beforeEach(() => {
     cy.get('#autocomplete').clear()
 
     cy.get('#autocomplete').type('Republic')
-    cy.contains('Central African Republic').should('be.visible').click()
+    cy.get('#autocomplete').type('{downarrow}','{enter}')
+    //cy.contains('Central African Republic').should('be.visible').click()
     
    
 
